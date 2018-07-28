@@ -1,0 +1,30 @@
+
+
+body{
+  font-family: 'Muli', sans-serif !important;
+  @for $i from 1 through 20 {
+    @media (min-width: #{6.25 * $i}em) {
+        font-size: #{16 + $i}px;
+    }
+}
+}
+
+
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: #14233c !important;
+}
+
+.bg-black {
+  background-color: #14233c !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+  border: solid 1px rgb(255, 72, 48) !important;
+}
