@@ -6282,7 +6282,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-/* @import "scss/site/layout.scss"; */
 body {
   font-family: 'Muli', sans-serif !important; }
   @media (min-width: 6.25em) {
@@ -6346,6 +6345,10 @@ body {
     body {
       font-size: 36px; } }
 
+.navbar {
+  background-color: #14233c;
+  border-bottom: solid 1px #ff4830 !important; }
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -6361,73 +6364,23 @@ body {
   border-radius: 5rem;
   border: solid 1px #ff4830 !important; }
 
-/* .navbar-custom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: fade-out($black, 0.3);
-  .navbar-brand {
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    font-weight: 700;
-  }
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.1rem;
-      }
-    }
-  }
-} */
-.navbar {
-  background-color: #14233c;
-  border-bottom: solid 1px #ff4830 !important; }
-
 header.masthead {
   /*   position: relative;
-  overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
-  background: linear-gradient(0deg, $secondary 0%, $primary 100%);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover; */
+      overflow: hidden;
+      padding-top: calc(7rem + 72px);
+      padding-bottom: 7rem;
+      background: linear-gradient(0deg, $secondary 0%, $primary 100%);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+      background-size: cover; */
   background: linear-gradient(to top, rgba(38, 5, 225, 0.226), #14233c), url("../images/memphis.jpg");
   background-position: center center;
   padding-top: 3rem;
   background-repeat: repeat;
   position: relative;
   color: white;
-  min-height: 50vh;
-  /*   .bg-circle-1 {
-    height: 90rem;
-    width: 90rem;
-    bottom: -55rem;
-    left: -55rem;
-    background-color: yellow !important;
-  }
-  .bg-circle-2 {
-    height: 50rem;
-    width: 50rem;
-    top: -25rem;
-    right: -25rem;
-  }
-  .bg-circle-3 {
-    height: 20rem;
-    width: 20rem;
-    bottom: -10rem;
-    right: 5%;
-  }
-  .bg-circle-4 {
-    height: 30rem;
-    width: 30rem;
-    top: -5rem;
-    right: 35%;
-  } */ }
+  min-height: 50vh; }
   header.masthead .masthead-content {
     z-index: 1;
     position: relative; }
@@ -6440,6 +6393,27 @@ header.masthead {
     position: absolute;
     border-radius: 100%;
     background: linear-gradient(0deg, #007bff 0%, #6c757d 100%); }
+  header.masthead .bg-circle-1 {
+    height: 90rem;
+    width: 90rem;
+    bottom: -55rem;
+    left: -55rem;
+    background-color: yellow !important; }
+  header.masthead .bg-circle-2 {
+    height: 50rem;
+    width: 50rem;
+    top: -25rem;
+    right: -25rem; }
+  header.masthead .bg-circle-3 {
+    height: 20rem;
+    width: 20rem;
+    bottom: -10rem;
+    right: 5%; }
+  header.masthead .bg-circle-4 {
+    height: 30rem;
+    width: 30rem;
+    top: -5rem;
+    right: 35%; }
 
 @media (min-width: 992px) {
   header.masthead {
@@ -6450,35 +6424,67 @@ header.masthead {
     header.masthead .masthead-content .masthead-subheading {
       font-size: 4rem; } }
 
-/* .bg-primary {
-  background-color: $primary !important;
-}
+.main-wrapper {
+  width: 68.75%;
+  margin: 0 auto; }
+  @media (min-width: 1200px) {
+    .main-wrapper {
+      width: 80%; } }
+  @media (max-width: 1199.98px) {
+    .main-wrapper {
+      width: 90%; } }
+  @media (max-width: 767.98px) {
+    .main-wrapper {
+      width: 97%; } }
 
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
-  }
-  &:focus {
-    box-shadow: 0 0 0 0.2rem fade-out($primary, 0.5);
-  }
-}
+.featured-area {
+  background: white;
+  padding: 0 0 120px 0; }
+  .featured-area .single-feature {
+    margin-top: 30px;
+    padding: 80px 50px;
+    border-radius: 3px;
+    /* border: 1px solid #14233c; */
+    transition: all 0.2s ease-in-out; }
+    .featured-area .single-feature img {
+      /* border: 1px solid #14233c; */ }
+      @media (max-width: 768px) {
+        .featured-area .single-feature img {
+          max-width: 250px; } }
+    @media (max-width: 991.98px) {
+      .featured-area .single-feature {
+        padding: 50px 15px; } }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .featured-area .single-feature {
+        transition: none; } }
+    .featured-area .single-feature span {
+      /* font-size: 36px; */
+      font-weight: 600;
+      transition: all 0.2s ease-in-out; }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .featured-area .single-feature span {
+          transition: none; } }
+    .featured-area .single-feature h3 {
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+    .featured-area .single-feature p {
+      margin-bottom: 40px; }
+    .featured-area .single-feature a {
+      font-weight: 500;
+      color: darkblue; }
+    .featured-area .single-feature:hover {
+      border: 1px solid #d15343;
+      box-shadow: 0px 20px 48.5px 1.5px #14233c; }
+      .featured-area .single-feature:hover span {
+        color: black; }
 
-.btn-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($secondary, 10%) !important;
-    border-color: darken($secondary, 10%) !important;
-  }
-  &:focus {
-    box-shadow: 0 0 0 0.2rem fade-out($secondary, 0.5);
-  }
-}
- */
+#section-title {
+  color: white;
+  background-color: #14233c;
+  border-top: 2px solid #d15343;
+  border-bottom: 2px solid #d15343; }
+  #section-title h1 {
+    font-size: 60px !important; }
+
+/* @import "scss/site/one-page-wonder.scss"; */
