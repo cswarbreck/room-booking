@@ -6286,64 +6286,64 @@ body {
   font-family: 'Muli', sans-serif !important; }
   @media (min-width: 6.25em) {
     body {
-      font-size: 17px; } }
+      font-size: 16px; } }
   @media (min-width: 12.5em) {
     body {
-      font-size: 18px; } }
+      font-size: 17px; } }
   @media (min-width: 18.75em) {
     body {
-      font-size: 19px; } }
+      font-size: 18px; } }
   @media (min-width: 25em) {
     body {
-      font-size: 20px; } }
+      font-size: 19px; } }
   @media (min-width: 31.25em) {
     body {
-      font-size: 21px; } }
+      font-size: 20px; } }
   @media (min-width: 37.5em) {
     body {
-      font-size: 22px; } }
+      font-size: 21px; } }
   @media (min-width: 43.75em) {
     body {
-      font-size: 23px; } }
+      font-size: 22px; } }
   @media (min-width: 50em) {
     body {
-      font-size: 24px; } }
+      font-size: 23px; } }
   @media (min-width: 56.25em) {
     body {
-      font-size: 25px; } }
+      font-size: 24px; } }
   @media (min-width: 62.5em) {
     body {
-      font-size: 26px; } }
+      font-size: 25px; } }
   @media (min-width: 68.75em) {
     body {
-      font-size: 27px; } }
+      font-size: 26px; } }
   @media (min-width: 75em) {
     body {
-      font-size: 28px; } }
+      font-size: 27px; } }
   @media (min-width: 81.25em) {
     body {
-      font-size: 29px; } }
+      font-size: 28px; } }
   @media (min-width: 87.5em) {
     body {
-      font-size: 30px; } }
+      font-size: 29px; } }
   @media (min-width: 93.75em) {
     body {
-      font-size: 31px; } }
+      font-size: 30px; } }
   @media (min-width: 100em) {
     body {
-      font-size: 32px; } }
+      font-size: 31px; } }
   @media (min-width: 106.25em) {
     body {
-      font-size: 33px; } }
+      font-size: 32px; } }
   @media (min-width: 112.5em) {
     body {
-      font-size: 34px; } }
+      font-size: 33px; } }
   @media (min-width: 118.75em) {
     body {
-      font-size: 35px; } }
+      font-size: 34px; } }
   @media (min-width: 125em) {
     body {
-      font-size: 36px; } }
+      font-size: 35px; } }
 
 .navbar {
   background-color: #14233c;
@@ -6380,7 +6380,38 @@ header.masthead {
   background-repeat: repeat;
   position: relative;
   color: white;
-  min-height: 50vh; }
+  min-height: 50vh;
+  /*   .bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(0deg, $primary 0%, $secondary 100%);
+  }
+    .bg-circle-1 {
+        height: 90rem;
+        width: 90rem;
+        bottom: -55rem;
+        left: -55rem;
+        background-color: yellow !important;
+      }
+      .bg-circle-2 {
+        height: 50rem;
+        width: 50rem;
+        top: -25rem;
+        right: -25rem;
+      }
+      .bg-circle-3 {
+        height: 20rem;
+        width: 20rem;
+        bottom: -10rem;
+        right: 5%;
+      }
+      .bg-circle-4 {
+        height: 30rem;
+        width: 30rem;
+        top: -5rem;
+        right: 35%;
+      } */ }
   header.masthead .masthead-content {
     z-index: 1;
     position: relative; }
@@ -6388,32 +6419,6 @@ header.masthead {
       font-size: 4rem; }
     header.masthead .masthead-content .masthead-subheading {
       font-size: 2rem; }
-  header.masthead .bg-circle {
-    z-index: 0;
-    position: absolute;
-    border-radius: 100%;
-    background: linear-gradient(0deg, #007bff 0%, #6c757d 100%); }
-  header.masthead .bg-circle-1 {
-    height: 90rem;
-    width: 90rem;
-    bottom: -55rem;
-    left: -55rem;
-    background-color: yellow !important; }
-  header.masthead .bg-circle-2 {
-    height: 50rem;
-    width: 50rem;
-    top: -25rem;
-    right: -25rem; }
-  header.masthead .bg-circle-3 {
-    height: 20rem;
-    width: 20rem;
-    bottom: -10rem;
-    right: 5%; }
-  header.masthead .bg-circle-4 {
-    height: 30rem;
-    width: 30rem;
-    top: -5rem;
-    right: 35%; }
 
 @media (min-width: 992px) {
   header.masthead {
@@ -6423,6 +6428,10 @@ header.masthead {
       font-size: 6rem; }
     header.masthead .masthead-content .masthead-subheading {
       font-size: 4rem; } }
+
+body .popover {
+  max-width: 300px;
+  max-height: 300px; }
 
 .main-wrapper {
   width: 68.75%;
@@ -6443,14 +6452,19 @@ header.masthead {
   .featured-area .single-feature {
     margin-top: 30px;
     padding: 80px 50px;
-    border-radius: 3px;
+    border-radius: 13px;
     /* border: 1px solid #14233c; */
     transition: all 0.2s ease-in-out; }
     .featured-area .single-feature img {
-      /* border: 1px solid #14233c; */ }
+      padding: 15px;
+      border: 1px solid #14233c;
+      box-shadow: 0px 3px 10px 1.5px #d15343; }
       @media (max-width: 768px) {
         .featured-area .single-feature img {
-          max-width: 250px; } }
+          max-width: 200px;
+          padding: 3px; } }
+    .featured-area .single-feature th {
+      padding-right: 7rem; }
     @media (max-width: 991.98px) {
       .featured-area .single-feature {
         padding: 50px 15px; } }
@@ -6469,10 +6483,11 @@ header.masthead {
       margin-top: 40px;
       margin-bottom: 20px; }
     .featured-area .single-feature p {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-size: 1.4rem; }
     .featured-area .single-feature a {
       font-weight: 500;
-      color: darkblue; }
+      color: white; }
     .featured-area .single-feature:hover {
       border: 1px solid #d15343;
       box-shadow: 0px 20px 48.5px 1.5px #14233c; }
@@ -6481,7 +6496,8 @@ header.masthead {
 
 #section-title {
   color: white;
-  background-color: #14233c;
+  background: linear-gradient(to top, rgba(38, 5, 225, 0.226), #14233c), url("../images/memphis.jpg");
+  background-position: center center;
   border-top: 2px solid #d15343;
   border-bottom: 2px solid #d15343; }
   #section-title h1 {

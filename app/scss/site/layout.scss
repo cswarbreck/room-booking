@@ -2,7 +2,7 @@ body {
   font-family: 'Muli', sans-serif !important;
   @for $i from 1 through 20 {
     @media (min-width: #{6.25 * $i}em) {
-      font-size: #{16 + $i}px;
+      font-size: #{15 + $i}px;
     }
   }
 }
@@ -57,7 +57,7 @@ header.masthead {
       font-size: 2rem;
     }
   }
-  .bg-circle {
+/*   .bg-circle {
     z-index: 0;
     position: absolute;
     border-radius: 100%;
@@ -87,7 +87,7 @@ header.masthead {
         width: 30rem;
         top: -5rem;
         right: 35%;
-      }
+      } */
 }
 
 @media (min-width: 992px) {
@@ -103,6 +103,11 @@ header.masthead {
       }
     }
   }
+}
+
+body .popover {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 
@@ -126,16 +131,22 @@ header.masthead {
 	.single-feature {
     img{
       @media(max-width: 768px){
-        max-width: 250px;
+        max-width: 200px;
+        padding: 3px;
       }
-      /* border: 1px solid #14233c; */
+      padding: 15px;
+      border: 1px solid #14233c;
+      box-shadow: 0px 3px 10px 1.5px #d15343;
+    }
+    th{
+      padding-right: 7rem;
     }
 		margin-top: 30px;
 		padding: 80px 50px;
 		@include media-breakpoint-down (md) {
 			padding: 50px 15px;
 		}
-		border-radius: 3px;
+		border-radius: 13px;
 		/* border: 1px solid #14233c; */
 		@include transition();
 		span {
@@ -149,11 +160,12 @@ header.masthead {
 			margin-bottom: 20px;
 		}
 		p {
-			margin-bottom: 40px;
+      margin-bottom: 40px;
+      font-size: 1.4rem;
 		}
 		a {
 			font-weight: 500;
-			color: darkblue;
+			color: white;
 		}
 		&:hover {
 			border: 1px solid #d15343;
@@ -167,7 +179,8 @@ header.masthead {
 
 #section-title{
   color: white;
-  background-color: #14233c;
+  background: linear-gradient(to top, hsla(249, 96%, 45%, 0.226), #14233c), url('../images/memphis.jpg');
+  background-position: center center;
   border-top: 2px solid #d15343;
   border-bottom: 2px solid #d15343;
   h1{
